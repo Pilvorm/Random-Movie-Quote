@@ -11,6 +11,7 @@ This project was made with:
 - HTML
 - SCSS
 - jQuery
+- Bootstrap Icons
 
 With contents taken from:
 - [JSON Gist](https://gist.github.com/Pilvorm/f1aba266bafb87402fe944c0ff6baf04) 
