@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  font-family: "Raleway", sans-serif !important;
+}
+
+div {
+  position: relative;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8), rgb(0, 0, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100%;
+  width: 100%;
+}
+#wrapper .author-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  z-index: -1;
+}
+
+#quote-box {
+  color: white;
+  width: 640px;
+  min-height: 40%;
+  max-height: 100%;
+  padding: 25px 25px;
+  border-radius: 5px;
+  background-color: rgba(24, 27, 27, 0.5);
+  transition: all 0.125s ease;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+}
+#quote-box #text {
+  text-align: center;
+  font-size: 32px;
+}
+#quote-box #author {
+  text-align: right;
+  font-style: italic;
+}
+#quote-box #actions {
+  display: flex;
+  align-items: center;
+}
+#quote-box #actions #new-quote {
+  position: absolute;
+  right: 0;
+}
+#quote-box #actions #new-quote #new-quote-btn {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  padding: 10px 20px;
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.125s ease-in;
+}
+#quote-box #actions #new-quote #new-quote-btn:hover {
+  background-color: transparent;
+  color: white;
+  transition: all 0.1s ease-in;
+}
+#quote-box #actions #new-quote #new-quote-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 25px white;
+}
+#quote-box #actions #new-quote #new-quote-btn:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+#quote-box #actions #new-quote #new-quote-btnn:active {
+  top: 1px;
+  background-color: transparent;
+}
+#quote-box #actions #socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+#quote-box #actions #socials #tweet-quote {
+  text-decoration: none;
+  color: #1DA1F2;
+  font-size: 36px;
+  transition: all 0.125s ease-in;
+}
+#quote-box #actions #socials #tweet-quote:hover {
+  text-shadow: 0px 0px 5px #1DA1F2;
+  transition: all 0.125s ease-in;
+}
+#quote-box #actions #socials #tweet-quote:hover ~ .icon-title {
+  opacity: 1;
+  transform: translateX(5px);
+  transition: all 0.125s ease-in;
+}
+#quote-box #actions #socials #tweet-quote img {
+  width: 36px;
+  transition: all 0.125s ease-in;
+}
+#quote-box #actions #socials #tweet-quote img:hover {
+  filter: drop-shadow(0px 0px 5px #1DA1F2);
+  transition: all 0.125s ease-in;
+}
+#quote-box #actions #socials .icon-title {
+  opacity: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  transition: all 0.125s ease-in;
+}
+
+@media only screen and (max-width: 480px) {
+  #quote-box {
+    width: 100%;
+    height: 100%;
+    padding: 50% 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
